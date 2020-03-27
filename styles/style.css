@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Questrial', sans-serif;
+  background-color: #666;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: #fff;
+}
+
+.video-header {
+  background: #333;
+  color: #fff;
+  width: 60%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+
+.input-video {
+  padding: 5px;
+  color: transparent;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  margin: 5px;
+  outline: none;
+  background-color: darkgrey;
+  cursor: pointer;
+  border: none;
+}
+
+.input-video::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.input-video::before {
+  content: 'upload mp4 or mp3 to listen some music';
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  border-radius: 5px;
+  background-color: darkgrey;
+  font-weight: 500;
+  -webkit-user-select: none;
+  color: #000;
+}
+
+.screen {
+  cursor: pointer;
+  width: 60%;
+  background-color: #000 !important;
+  outline: none;
+}
+
+.controls {
+  background: #333;
+  color: #fff;
+  width: 60%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.controls .btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.controls .fa-play {
+  color: #28a745;
+}
+
+.controls .fa-push {
+  color: #fff;
+}
+
+.controls .fa-stop {
+  color: #dc3545;
+}
+
+.controls .fa-pause {
+  color: #fff;
+}
+
+.controls .fa-volume-up {
+  color: #fff;
+  padding: 5px;
+}
+
+.controls .fa-volume-off {
+  color: #fff;
+  padding: 5px;
+}
+
+.controls .fa-volume-down {
+  color: #fff;
+  padding: 5px;
+}
+
+.controls .volume {
+  width: 20%;
+}
+
+.controls .timestamp {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+@media (max-width: 800px) {
+
+  .video-header,
+  .screen,
+  .controls {
+    width: 90%;
+  }
+}
